@@ -14,6 +14,9 @@ const router = new VueRouter({
 import Vuelidate from "vuelidate";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import 'vue-sidebar-menu/dist/vue-sidebar-menu.css';
+import 'vuesax/dist/vuesax.css';
+
 
 import {
   FormGroupPlugin,
@@ -31,6 +34,7 @@ import {
   FormRadioPlugin,
   ListGroupPlugin,
   FormFilePlugin,
+  SidebarPlugin
  
 } from "bootstrap-vue";
 [
@@ -49,6 +53,7 @@ import {
   FormRadioPlugin,
   ListGroupPlugin,
   FormFilePlugin,
+  SidebarPlugin
 ].forEach((x) => Vue.use(x));
 Vue.use(Vuelidate);
 
